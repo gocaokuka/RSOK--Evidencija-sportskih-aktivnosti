@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="KorisnickiInterfejs.Login" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            width: 322px;
+        }
+        .style3
+        {
+            width: 277px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    EVIDENCIJA SPORTSKIH AKTIVNOSTI U GRADU
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Prijava</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <table style="width: 100%; height: 104px;">
+                    <tr>
+                        <td class="style3">
+                            &nbsp;</td>
+                        <td class="style2" style="font-weight: 700; text-align: center">
+                            PRIJAVA KORISNIKA</td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style3">
+                            <asp:Label ID="lblKorisnickoIme" runat="server" Text="Korisnicko ime"></asp:Label>
+                        </td>
+                        <td class="style2">
+                            <asp:TextBox ID="txbKorisnickoIme" runat="server"></asp:TextBox>
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style3">
+                            <asp:Label ID="lblSifra" runat="server" style="text-align: right" Text="Sifra"></asp:Label>
+                        </td>
+                        <td class="style2">
+                            <asp:TextBox ID="txbSifra" runat="server"></asp:TextBox>
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style3">
+                            &nbsp;</td>
+                        <td class="style2">
+                            <asp:Label ID="lblStatus" runat="server" Text="status"></asp:Label>
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style3">
+                            &nbsp;</td>
+                        <td class="style2">
+                            <asp:Button ID="btnPrijava" runat="server" onclick="btnPrijava_Click" 
+                                Text="PRIJAVA" />
+                            <asp:Button ID="btnOdustani" runat="server" onclick="btnOdustani_Click" 
+                                Text="ODUSTANI" />
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                </table>
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="KorisnickiInterfejs.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    EVIDENCIJA SPORTSKIH AKTIVNOSTI - ADMINISTRATOR
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" 
+                    Font-Size="Medium" Font-Underline="True" ForeColor="White" 
+                    NavigateUrl="~/Default.aspx">ODJAVA</asp:HyperLink>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                    onmenuitemclick="NavigationMenu_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem Text="LOKACIJE" 
+                            Value="LOKACIJE">
+                            <asp:MenuItem NavigateUrl="~/LokacijaTabelarni.aspx" 
+                                Text="Tabelarni prikaz lokacija" Value="Tabelarni prikaz lokacija">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/LokacijaUnos.aspx" Text="Unos lokacija" 
+                                Value="Unos lokacija"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/LokacijaTabelaEdit.aspx" 
+                                Text="Izmena i brisanje lokacija" Value="Izmena i brisanje lokacija">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/LokacijaStampa.aspx" Text="Stampa spiska lokacija" 
+                                Value="Stampa spiska lokacija"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/LokacijaParametarStampe.aspx" 
+                                Text="Parametarska stampa spiska lokacija" 
+                                Value="Parametarska stampa spiska lokacija"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="SPORTOVI" 
+                            Value="SPORTOVI">
+                            <asp:MenuItem NavigateUrl="~/SportSpisak.aspx" Text="Spisak sportova" 
+                                Value="Spisak sportova"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SportUnos.aspx" Text="Unos sportova" 
+                                Value="Unos sportova"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
