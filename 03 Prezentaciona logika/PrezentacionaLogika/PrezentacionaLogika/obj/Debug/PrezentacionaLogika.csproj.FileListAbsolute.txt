@@ -1,0 +1,7 @@
+C:\Users\Korisnik\Desktop\IP GO\04 Prezentacioni sloj\PrezentacionaLogika\PrezentacionaLogika\PrezentacionaLogika\obj\Debug\PrezentacionaLogika.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\IP GO\04 Prezentacioni sloj\PrezentacionaLogika\PrezentacionaLogika\PrezentacionaLogika\bin\Debug\PrezentacionaLogika.dll
+C:\Users\Korisnik\Desktop\IP GO\04 Prezentacioni sloj\PrezentacionaLogika\PrezentacionaLogika\PrezentacionaLogika\bin\Debug\PrezentacionaLogika.pdb
+C:\Users\Korisnik\Desktop\IP GO\04 Prezentacioni sloj\PrezentacionaLogika\PrezentacionaLogika\PrezentacionaLogika\bin\Debug\KlasePodataka.dll
+C:\Users\Korisnik\Desktop\IP GO\04 Prezentacioni sloj\PrezentacionaLogika\PrezentacionaLogika\PrezentacionaLogika\bin\Debug\KlasePodataka.pdb
+C:\Users\Korisnik\Desktop\IP GO\04 Prezentacioni sloj\PrezentacionaLogika\PrezentacionaLogika\PrezentacionaLogika\obj\Debug\PrezentacionaLogika.dll
+C:\Users\Korisnik\Desktop\IP GO\04 Prezentacioni sloj\PrezentacionaLogika\PrezentacionaLogika\PrezentacionaLogika\obj\Debug\PrezentacionaLogika.pdb
